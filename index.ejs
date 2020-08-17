@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> <!--bootstrap link-->
+	<style>
+		body { padding-top:50px;text-align:center;background-color:#DCE2BD;color:black; }
+		iframe { object-fit:scale-down; }
+		h4 { color:black; }
+		a { color:grey; }
+		h3 { color:black; }
+	</style>
+</head>
+<body class="container">
+	<header>
+		
+	</header>
+
+	<main> 
+		<div class="jumbotron">
+			<h1>Printer Status Page</h1>
+		</div>
+		<div style='background-color:grey;color:white;padding:3px;width:45%;margin:auto;border-radius:5px;'>
+			<h3> <%= printThis %> </h3>
+			
+			<a href="http://<%= connectIp %>/webcam/?action=stream"><h4 style="color:#83E8BA;">See Printer</h4></a>
+			<!--<button data-toggle="collapse" data-target="#demo">Collapsible</button>
+			<div id="demo" class="collapse">
+			<iframe id="inlineFrameExample"
+				title="Inline Frame Example"
+				width="600"
+				height="400"
+				src="http://10.0.0.115/webcam/?action=stream">
+			</iframe>
+			</div>-->
+			<hr>
+			<a href='http://<%= connectIp %>/#temp'><h4>Go to Control Page</h4><a>
+			<!--<hr>
+			<form action="/" method="POST">
+				<h4><input type="file" name="zeFile" style="border-radius:10px;"/>
+				<br><br><button type="submit" formaction="/uploadCAD" style="border-radius:5px;">Upload File</button>
+				</h4>
+			</form>-->
+		</div>
+		<hr>
+	</main>
+</body>
+</html>
